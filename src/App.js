@@ -1,14 +1,12 @@
 /*global kakao*/
 import React, { Component } from 'react';
 import './App.css';
-import MapApi from './components/MapApi';
-import { Map, Marker, MarkerClusterer, Polyline } from 'react-kakao-maps'
-
+import MapTry from './components/MapTry';
 
 class App extends Component {
   render() {
     return (
-      <MapApi />
+      <MapTry />
     );
   }
 }
