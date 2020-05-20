@@ -26,6 +26,7 @@ class MapApi extends Component {
     render() {
         return <MapApi id="Mymap"></MapApi>;
     }
+    
 }
 
 export default MapApi;
