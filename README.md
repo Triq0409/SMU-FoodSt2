@@ -10,3 +10,6 @@ React 기반으로 지도 api 활용하여 학교 주변 맛집 지도 만들기
 - [React에 카카오 지도 api 적용한 사례 2](https://znznzn.tistory.com/47)
 - [카카오 공식 지도 api 가이드](https://apis.map.kakao.com/web/sample/basicMap/)
 - [카카오 지도 관련 패키지](https://musma.github.io/2019/05/17/react-kakao-maps.html)
+- [자바스크립트 기초](https://learnjs.vlpt.us/)
+- [지도 api 적용 예시(카카오 아님)](https://im-developer.tistory.com/161)
+- [React-Naver-Maps](https://zeakd.github.io/react-naver-maps/)
