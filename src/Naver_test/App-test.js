@@ -1,19 +1,9 @@
 import React, { Component } from 'react';
-import { RenderAfterNavermapsLoaded, NaverMap } from 'react-naver-maps';
-/*
+import { NaverMap } from 'react-naver-maps';
 import MyMap from './test.js';
 
-class App extends Component {
-  render(){
-    return(
-      <div>My Test Map!
-        <MyMap />
-      </div>
-    );
-  }
-}*/
 class App extends React.Component {
-  constructor(props) {
+  /*constructor(props) {
     super(props);
 
     this.state = {
@@ -26,10 +16,6 @@ class App extends React.Component {
   panToNaver() {
     this.setState({ center: { lat: 37.3595704, lng: 127.105399 }})
   }
-
-  render() {
-    return (
-      <div>
         <button onClick={this.panToNaver}>Pan To Naver</button>
         <p>lat: {this.state.center.y || this.state.center.lat}</p>
         <p>lng: {this.state.center.x || this.state.center.lng}</p>
@@ -44,7 +30,12 @@ class App extends React.Component {
           // Not defaultCenter={this.state.center}
           center={this.state.center}
           onCenterChanged={center => this.setState({ center })}
-        />
+        />*/
+        
+  render() {
+    return (
+      <div>
+        <MyMap />
       </div>
     )
   }
