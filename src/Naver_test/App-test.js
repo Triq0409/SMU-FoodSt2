@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { NaverMap } from 'react-naver-maps';
 import MyMap from './test.js';
 
-class App extends React.Component {
+class App2 extends React.Component {
   /*constructor(props) {
     super(props);
 
@@ -41,4 +40,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default App2;
