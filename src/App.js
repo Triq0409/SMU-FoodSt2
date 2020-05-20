@@ -6,7 +6,7 @@ import MyMap from './Naver_test/test';
 class App extends Component {
   render() {
     return (
-      <MyMap />
+      <MapTest />
     );
   }
 }
