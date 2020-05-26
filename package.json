@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-geocode": "^0.2.1",
     "react-kakao-maps": "Musma/react-kakao-maps#0.0.1",
     "react-naver-maps": "^0.0.13",
     "react-scripts": "3.4.1"
