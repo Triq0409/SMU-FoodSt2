@@ -9,6 +9,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-kakao-maps": "Musma/react-kakao-maps#0.0.1",
+    "react-naver-maps": "^0.0.13",
     "react-scripts": "3.4.1"
   },
   "scripts": {

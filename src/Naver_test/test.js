@@ -10,6 +10,8 @@ class MyMap extends Component {
             width: '800px',
             height: '600px',
             }}
+            defaultCenter={{lat:37.554772, lng:126.9707833}}
+            defaultZoom={12}
         />);
     }
 }
