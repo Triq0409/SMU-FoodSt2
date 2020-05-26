@@ -1,12 +1,11 @@
 /*global kakao*/
 import React, { Component } from 'react';
-import MapTry from './Components/MapTry';
-import MyMap from './Naver_test/test';
+import MapSam from './Components/MapTry';
 
 class App extends Component {
   render() {
     return (
-      <MapTry />
+      <MapSam />
     );
   }
 }
