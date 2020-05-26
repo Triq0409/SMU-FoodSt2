@@ -1,5 +1,6 @@
 import { NaverMap, Marker } from 'react-naver-maps';
 import React, { Component } from 'react';
+import '../Naver_test/Form.css'
 
 
 class MyMap extends Component {
@@ -35,7 +36,7 @@ class MyMap extends Component {
             <NaverMap
                 mapDivId={'maps'}
                 style={{
-                width: '900px',
+                width: '100%',
                 height: '85vh' 
                 }}
                 defaultCenter={{  lat: 37.5450416, lng: 126.9647459 }}
