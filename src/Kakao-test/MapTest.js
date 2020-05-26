@@ -16,7 +16,6 @@ class MapTest extends React.Component {
                     center: new kakao.maps.Coords(37.545206089586245,126.96525487501158)
                 })
             })
-            const map = new window.kakao.maps.Map(container, options);
         }, []);
 
     }

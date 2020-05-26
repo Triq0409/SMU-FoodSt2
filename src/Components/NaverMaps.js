@@ -28,7 +28,3 @@ class MyMap extends Component {
 }
 
 export default MyMap;
-
-/* <Marker
-position={new naver.maps.LatLng(37.5450416, 126.9647459)}
-/>  */
