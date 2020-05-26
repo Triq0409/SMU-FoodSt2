@@ -1,16 +1,18 @@
 import React from 'react';
+import MyMap from './Components/NaverMaps';
 import Form from './Naver_test/Form';
-//import MyMap from './Components/test';
 import {  NaverMap, Marker } from 'react-naver-maps';
-import { fromAddress } from 'react-geocode';
+import './App.css';
 
+
+/*
 function NaverMapAPI() {
   const navermaps = window.naver.maps;
   return (
     <NaverMap
       mapDivId={'maps-getting-started-uncontrolled'}
       style={{
-        width: '100%', // 네이버지도 가로 길이
+        width: '900px', // 네이버지도 가로 길이
         height: '85vh' // 네이버지도 세로 길이
       }}
       defaultCenter={{  lat: 37.5450416, lng: 126.9647459 }}
@@ -20,7 +22,7 @@ function NaverMapAPI() {
         key={1}
         position={new navermaps.LatLng(37.5450416, 126.9647459 )}
         animation={2}
-        onClick={() => {alert('여기는 숙명여대입니다.');}}
+        mouseover={() => {alert('여기는 숙명여대입니다.');}}
       />
       <Marker       
         key={2}
@@ -30,7 +32,7 @@ function NaverMapAPI() {
       />
     </NaverMap>
   );
-}
+}*/
 
 function App() {
   return (
@@ -44,3 +46,6 @@ function App() {
 }
 
 export default App;
+
+
+
