@@ -1,15 +1,6 @@
 
-.content {
-    max-width: 900px;
-    background: #CDECFA;
-    padding-top: 20px;
-    margin-top: 5px;
-    text-align: center;
-  }
-
 .template{
-    background : white;
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -34,21 +25,24 @@
     float: left;
 }
 
-/*
+/* 지도, 텍스트, 리뷰 등 메인 컴포넌트가 들어가는 파트 */
 
-*/
-
-.icon {
-    display: block;
-    max-height: 80px;
+.content {
+    background: #CDECFA;
+    padding-top: 20px;
+    margin-top: 5px;
+    text-align: center;
     margin: 0 auto;
-}
+  }
 
+/* 지도 컴포넌트 css 스타일 */
 .map {
     width: 600px;
     height: 400px;
-    border : 3px solid white;
-    border-bottom-style: groove;
     margin: 0 auto;
     margin-bottom: 20px;
+
+    border : 3px solid white;
+    border-bottom-style: groove;
+
 }
