@@ -14,13 +14,14 @@
     border:none;
     border-bottom: 1px solid black;
 }
+
 .create-button{
     padding: 15px 25px;
     font-size:24px;
     text-align : center;
     cursor: pointer;
     outline: none;
-    color: #fff;
+    color: white;
     background-color: royalblue;
     border: none;
     border-radius: 3px;
