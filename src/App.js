@@ -1,8 +1,11 @@
 import React from 'react';
-import MyMap from './Components/NaverMaps';
-import Form from './Naver_test/Form';
 import {  NaverMap, Marker } from 'react-naver-maps';
+
+import MyMap from './Components/NaverMaps';
+import Write from './Components/Review';
+
 import './css/test.css';
+
 
 function App() {
   return (
@@ -23,10 +26,19 @@ function App() {
     
     </div>
   );
-
-}
+};
 
 export default App;
 
-
+/*
+     <Form mapPop={(
+      <MyMap />
+    )}
+    reviews={(
+      <Write />
+    )}
+    >
+    </Form>
+  );
+*/
 

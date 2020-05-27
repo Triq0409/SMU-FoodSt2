@@ -49,25 +49,3 @@ class MyMap extends Component {
 }
 
 export default MyMap;
-/*
-            <Marker
-                key={1}
-                position={new navermaps.LatLng(37.5450416, 126.9647459 )}
-                animation={2}
-                mouseover={() => {alert('여기는 숙명여대입니다.');}}
-            />
-            <Marker       
-                key={2}
-                position={new navermaps.LatLng(37.551229, 126.988205)}
-                animation={1}
-                onClick={() => {alert('여기는 N서울타워입니다.');}}
-            />
-                    const loList = locations.map(
-            <Marker
-            key={1}
-            position={new navermaps.LatLng(37.5450416, 126.9647459 )}
-            animation={2}
-            mouseover={() => {alert('여기는 숙명여대입니다.');}}
-        />
-        );
-            */
