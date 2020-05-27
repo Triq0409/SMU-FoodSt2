@@ -1,7 +1,7 @@
 import React from 'react';
-import './Write.css';
+import './Review.css';
 
-const Write = ({text, onCreate}) =>  {
+const Review = ({text, onCreate}) =>  {
     return(
         <div className = "form">
             <input text={text} onCreate={onCreate}/>
@@ -13,4 +13,4 @@ const Write = ({text, onCreate}) =>  {
 }
 
 
-export default Write;
+export default Review;

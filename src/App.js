@@ -1,7 +1,7 @@
 import React from 'react';
 import MyMap from './Components/NaverMaps';
 import Form from './Naver_test/Form';
-import Write from './Components/Write';
+import Write from './Components/Review';
 //import {  NaverMap, Marker } from 'react-naver-maps';
 import './App.css';
 
