@@ -37,7 +37,7 @@ class MyMap extends Component {
                 mapDivId={'maps'}
                 style={{
                 width: '100%',
-                height: '85vh' 
+                height: '100%' 
                 }}
                 defaultCenter={{  lat: 37.5450416, lng: 126.9647459 }}
                 defaultZoom={15}
