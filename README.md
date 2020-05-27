@@ -32,3 +32,4 @@ React 기반으로 지도 api 활용하여 학교 주변 맛집 지도 만들기
 
 ## 기타 자료들 ##
 - [W3 School - Css, HTML 기초](https://www.w3schools.com/)
+- [깃헙 마크다운 사용법](https://gist.github.com/ihoneymon/652be052a0727ad59601)
