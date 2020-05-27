@@ -1,5 +1,5 @@
 import React from 'react';
-import './Review.css';
+import '../css/Review.css';
 
 const Review = ({text, onCreate}) =>  {
     return(

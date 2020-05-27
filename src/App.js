@@ -4,7 +4,7 @@ import {  NaverMap, Marker } from 'react-naver-maps';
 import MyMap from './Components/NaverMaps';
 import Write from './Components/Review';
 
-import './css/test.css';
+import './css/App.css';
 
 
 function App() {
