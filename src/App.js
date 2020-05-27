@@ -37,7 +37,7 @@ function NaverMapAPI() {
 function App() {
   return (
     <Form mapPop={(
-      <NaverMapAPI />
+      <MyMap />
     )}
     >
     </Form>

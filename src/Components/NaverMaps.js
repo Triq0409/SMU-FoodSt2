@@ -48,9 +48,6 @@ class MyMap extends Component {
 }
 
 export default MyMap;
-<<<<<<< HEAD
-
-=======
 /*
             <Marker
                 key={1}
@@ -73,4 +70,4 @@ export default MyMap;
         />
         );
             */
->>>>>>> 2cf0989020391db27b8067b912d2c92b50fff3bb
+

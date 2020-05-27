@@ -28,4 +28,3 @@ class MyMap extends Component {
 }
 
 export default MyMap;
-
