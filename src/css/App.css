@@ -4,7 +4,7 @@
     margin: 0 auto;
 }
 
-/* 그라디언트 배경 */
+/* 그라디언트 넣는법 (각도, 시작컬러, [옵션: 중간컬러 00%(지점까지)], 끝컬러) */
 .backGrad {
     background: linear-gradient(45deg, red, blue);
   }
@@ -39,7 +39,7 @@
 /* 지도, 텍스트, 리뷰 등 메인 컴포넌트가 들어가는 파트 */
 
 .content {
-    background: linear-gradient(180deg, #F8F1E9 30%, #DAEFF5 65%, #91E0F4);
+    background: linear-gradient(180deg, #D8EEE7 30%, #DAEFF5 65%, #91E0F4);
     padding-top: 20px;
     margin-top: 5px;
     text-align: center;
