@@ -1,7 +1,7 @@
 import React from 'react';
 import './Form.css';
 
-const Form = ({mapPop, reviews}) => {
+const Form = ({mapPop, reviewForm, reviewList}) => {
     return(
         <main className="template">
             <div className="title">
@@ -11,7 +11,10 @@ const Form = ({mapPop, reviews}) => {
                 {mapPop}
             </section>
             <section className="review">
-                {reviews}
+                {reviewForm}
+            </section>
+            <section className="reviewList">
+                {reviewList}
             </section>
         </main>
     )

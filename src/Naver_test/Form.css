@@ -26,3 +26,11 @@
     padding: 1rem;
     background : white;
 }
+
+.reviewList{
+    padding : 1rem;
+    min-height : 5rem;
+    width : 600px;
+    margin : 0 auto;
+    border-bottom : 1px solid black;
+}

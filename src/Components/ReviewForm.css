@@ -1,0 +1,31 @@
+.form{
+    display:flex; 
+}
+
+.form input{
+    flex:1;
+    font-size: 1.25rem;
+    outline:none;
+    border:none;
+    border-bottom: 1px solid black;
+}
+.create-button{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    background: royalblue;
+    border-radius: 3px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.create-button:hover{background-color : #00498c}
+/*
+.create-button:active{
+    background-color: #00498c;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}*/
