@@ -10,16 +10,15 @@
 .review-item:hover {
     background: #e3fafc;
 }
-<<<<<<< HEAD:src/Components/Review.css
+
 .review-text {
     flex: 1; 
-    word-break: break-all;
-=======
+    word-break: break-all;}
 
-.create-button{
+.create-button {
     padding: 15px 25px;
     font-size:24px;
-    text-align : center;
+    text-align: center;
     cursor: pointer;
     outline: none;
     color: white;
@@ -27,7 +26,6 @@
     border: none;
     border-radius: 3px;
     box-shadow: 0 9px #999;
->>>>>>> 1dd15c5f44820919b58b4ad23dc435ab6298eed9:src/css/Review.css
 }
 
 .review-item + .review-item {

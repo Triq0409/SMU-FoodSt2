@@ -59,6 +59,25 @@
 
 }
 
+.reviewListl {
+    width: 500px;
+    height: 150px;
+    background-color: whitesmoke;
+    color: #0C90AD;
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+.reviewInput {
+    width: 500px;
+    height: 150px;
+    background-color: whitesmoke;
+    color: #0C90AD;
+    margin: 0 auto;
+}
+
+
 .icon {
     max-height: 80px;
     float: left;
@@ -67,6 +86,8 @@
     margin-top: 13px;
 }
 
+
+/* 지도 마커 구분용 마커 & 마우스 올리면 스타일 변함 */
 .listBtn {
     background-color: #0C90AD;
     width: 60px;

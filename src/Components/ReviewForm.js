@@ -1,5 +1,5 @@
 import React from 'react';
-import './ReviewForm.css';
+import '../css/ReviewForm.css';
 
 const ReviewForm = ({text, onCreate, onChange}) =>  {
     return(

@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import './Review.css';
+import '../css/Review.css';
 
 class TodoItem extends Component {
     shouldComponentUpdate(nextProps, nextState) {
