@@ -1,0 +1,37 @@
+.map {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border : 3px solid white;
+    border-bottom-style: groove;
+
+}
+
+/* 지도 마커 구분용 마커 & 마우스 올리면 스타일 변함 */
+.listBtn {
+    background-color: #0C90AD;
+    width: 60px;
+    height: 40px;
+    font-size: 15px;
+    margin-right: 5px;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+ .listBtn:hover{
+    background-color: white;
+    width: 60px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 5px;
+    color: #0C90AD;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 5px;
+    }
