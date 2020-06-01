@@ -1,0 +1,111 @@
+
+.template{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* 그라디언트 넣는법 (각도, 시작컬러, [옵션: 중간컬러 00%(지점까지)], 끝컬러) */
+.backGrad {
+    background: linear-gradient(45deg, red, blue);
+  }
+
+.header {
+    height: 120px;
+}
+
+.title {
+    padding-top: 10px;
+    background: #0C90AD;
+    height: 100px;
+    padding: 1rem;
+}
+
+.font {
+    font-size: 50px;
+    font-weight: 100;
+    color: white;
+    margin: 0 auto;
+    float: left;
+}
+
+.fontSub {
+    font-size: 25px;
+    font-weight: 100;
+    color: white;
+    margin: 0 auto;
+    float: left;
+}
+
+/* 지도, 텍스트, 리뷰 등 메인 컴포넌트가 들어가는 파트 */
+
+.content {
+    background: linear-gradient(180deg, #D8EEE7 30%, #DAEFF5 65%, #91E0F4);
+    padding-top: 20px;
+    margin-top: 5px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 200px;
+  }
+
+/* 지도 컴포넌트 css 스타일 */
+.map {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    border : 3px solid white;
+    border-bottom-style: groove;
+
+}
+
+.icon {
+    max-height: 80px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 13px;
+}
+
+.listBtn {
+    background-color: #0C90AD;
+    width: 60px;
+    height: 40px;
+    font-size: 15px;
+    margin-right: 5px;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+ .listBtn:hover{
+    background-color: white;
+    width: 60px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 5px;
+    color: #0C90AD;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 5px;
+    }
+
+
+
+/* HTML index.html 에 적용할 css 코드들 */
+
+/*body::after{
+    background-image: url('http://www.sookmyung.ac.kr/sites/sookmyungkr/images/sub/contents/trade_character_05.png');
+    z-index: 1;
+    top:0;
+    left:0;
+    position:absolute;
+    background-size:100%;
+    opacity:0.5!important;
+    filter:alpha(opacity=50);
+    content:"";
+    width:100%;
+    height:100%;
+}*/

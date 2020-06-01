@@ -1,0 +1,35 @@
+.review-item {
+    padding: 1rem;
+    display: flex;
+    align-items: center; 
+    cursor: pointer;
+    transition: all 0.15s;
+    user-select: none;
+}
+  
+.review-item:hover {
+    background: #e3fafc;
+}
+<<<<<<< HEAD:src/Components/Review.css
+.review-text {
+    flex: 1; 
+    word-break: break-all;
+=======
+
+.create-button{
+    padding: 15px 25px;
+    font-size:24px;
+    text-align : center;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    background-color: royalblue;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 9px #999;
+>>>>>>> 1dd15c5f44820919b58b4ad23dc435ab6298eed9:src/css/Review.css
+}
+
+.review-item + .review-item {
+    border-top: 1px solid #f1f3f5;
+}
