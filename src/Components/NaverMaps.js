@@ -1,5 +1,5 @@
 import { NaverMap, Marker } from 'react-naver-maps';
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import '../css/App.css'
 
 /*

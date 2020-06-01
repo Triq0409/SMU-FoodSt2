@@ -2,16 +2,16 @@
 import React, { Component } from 'react';
 import '../css/Review.css';
 
-class TodoItem extends Component {
+class ReviewItem extends Component {
     shouldComponentUpdate(nextProps, nextState) {
         return this.props.checked !== nextProps.checked;
     }
 
     render() {
-        const { text} = this.props
+        const {text} = this.props
         return (
         <div className="review-item">
-            <div className="text"> 
+            <div className="review-text"> 
                 <div>{text}</div>
             </div>
         </div>
@@ -19,4 +19,4 @@ class TodoItem extends Component {
     }
 }
 
-export default TodoItem;
+export default ReviewItem;
