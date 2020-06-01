@@ -1,4 +1,4 @@
-/*
+
 import React, {Component} from 'react';
 import MyMap from './Components/NaverMaps';
 import Template from './Naver_test/Form';
@@ -43,13 +43,13 @@ class App extends Component {
       <Template mapPop={(
         <MyMap />
       )}
-      reviews={(
+      form={(
         <Form
           text={input}
           onChange={handleChange}
           onCreate={handleCreate}
         />)}
-      reviewList={(
+      children={(
         <ReviewList 
           reviews={reviews}
         />
@@ -59,11 +59,11 @@ class App extends Component {
 
   }
 }
-
+/*
 export default App;
 
 
-*/
+
 import React from 'react';
 import {  NaverMap, Marker } from 'react-naver-maps';
 
@@ -94,7 +94,7 @@ function App() {
     </div>
   );
 };
-
+*/
 export default App;
 
 /*

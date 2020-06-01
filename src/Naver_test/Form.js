@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/test.css';
+import './Form.css';
 
 /*import './Form.css';
 
@@ -25,37 +25,22 @@ const Form = ({mapPop, reviewForm, reviewList}) => {
 export default Form;
 */
 
-const Form = ({mapPop, reviews}) => {
+const Form = ({mapPop, form, children}) => {
     return(
-        <main>
-                <div>
-                    <h1>숙플레이스</h1>
-                </div>
-            <div className="centered">
-                <div className="content">
-                    <div className="map">
-                        {mapPop}
-                    </div>
-                    <div>
-                        {reviews}
-                        review 영역입니다.
-                    </div>
-                </div>
-            </div>
-        </main>
-        )
-    }
-        /*
+        <main className='template'>
             <section className="map">
                 {mapPop}
             </section>
             <section className="review">
-                {reviewForm}
+                {form}
             </section>
             <section className="reviewList">
-                {reviewList}
+                {children}
             </section>
+        </main>  
+    )
+}
 
-*/
+
 
 export default Form;
