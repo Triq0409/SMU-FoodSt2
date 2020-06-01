@@ -1,7 +1,6 @@
 import React from 'react';
-import '../css/test.css';
-
-/*import './Form.css';
+import './Form.css';
+/*
 
 const Form = ({mapPop, reviewForm, reviewList}) => {
     return(
