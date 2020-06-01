@@ -1,8 +1,6 @@
 import React from 'react';
 import './Form.css';
 
-/*import './Form.css';
-
 const Form = ({mapPop, reviewForm, reviewList}) => {
     return(
         <main className="template">
@@ -23,7 +21,7 @@ const Form = ({mapPop, reviewForm, reviewList}) => {
 }
 
 export default Form;
-*/
+
 
 const Form = ({mapPop, form, children}) => {
     return(

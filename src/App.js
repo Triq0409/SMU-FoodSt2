@@ -2,9 +2,6 @@
 import React, {Component} from 'react';
 import MyMap from './Components/NaverMaps';
 import Template from './Naver_test/Form';
-import './App.css';
-import Form from './Components/ReviewForm';
-import ReviewList from './Components/reviewList';
 
 
 class App extends Component {
@@ -63,12 +60,13 @@ class App extends Component {
 export default App;
 
 
-
 import React from 'react';
 import {  NaverMap, Marker } from 'react-naver-maps';
 
 import MyMap from './Components/NaverMaps';
 import Write from './Components/Review';
+import ReviewForm from './Components/ReviewForm';
+import ReviewList from './Components/reviewList';
 
 import './css/App.css';
 
