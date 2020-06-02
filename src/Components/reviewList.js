@@ -1,21 +1,22 @@
 import React, {Component} from 'react';
-import Review from './Review';
+import ReviewItem from './Review';
 
 class ReviewList extends Component{
     shouldComponentUpdate(nextProps, nextState) {
-        return this.props.todos !== nextProps.todos;
+        return this.props.reviews !== nextProps.reviews;
       } 
+
       render() {
         const { reviews } = this.props;
-
+        
         const reviewList = reviews.map(
             ({id, text}) => (
-              <Review
+              <ReviewItem 
                 id={id}
                 text={text}
             />
             )
-        );
+        )
 
         return(
             <div>

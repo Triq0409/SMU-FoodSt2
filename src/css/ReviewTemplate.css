@@ -1,0 +1,24 @@
+.review-template{
+    background : white;
+    width: 900px;
+    margin: 0 auto;
+    margin-top:1rem;
+}
+
+
+.form-wrapper{
+    padding : 6rem;
+    background : #ced4da;  
+    width : 600px;
+    margin : 0 auto;   
+}
+
+.review-wrapper{
+    padding : 1rem;
+    min-height : 5rem;
+    width : 600px;
+    margin : 0 auto;
+    border-bottom : 1px solid black;
+}
+
+

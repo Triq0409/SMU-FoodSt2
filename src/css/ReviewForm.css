@@ -3,11 +3,14 @@
 }
 
 .form input{
-    flex:1;
-    font-size: 1.25rem;
-    outline:none;
-    border:none;
-    border-bottom: 1px solid black;
+    flex : 1;
+    width : full;
+    height: 50px;
+    font-size : 1.25rem;
+    outline : none;
+    border: none;
+    word-break:break-all;
+    background : #ced4da;
 }
 .create-button{
     padding-top: 0.5rem;
@@ -22,4 +25,4 @@
     cursor: pointer;
 }
 
-.create-button:hover{background-color : #00498c}
+

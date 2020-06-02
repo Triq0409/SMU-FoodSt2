@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReviewComp from './Components/ReviewComp';
-import MapComp from './Components/MapComp'
+import MapComp from './Components/MapComp';
 import './css/App.css';
 
 function App(){
@@ -18,7 +18,6 @@ function App(){
         </div>
         <div className="content">
           <MapComp />
-          Review 영역입니다!
           <ReviewComp/>
         </div>
       </div>

@@ -1,16 +1,18 @@
-import React from 'react';
+import React,{Component} from 'react';
 import '../css/ReviewForm.css';
 
-const ReviewForm = ({text, onCreate, onChange}) =>  {
+const ReviewForm = ({value, onCreate, onChange}) =>  {
+    
     return(
         <div className = "form">
-            <input text={text} onChange={onChange} onCreate={onCreate}/>
+            <input value={value} onChange={onChange} />
             <div className="create-button" onClick={onCreate}>
                 +
             </div>
         </div>
     )
 }
+
 
 
 export default ReviewForm;
