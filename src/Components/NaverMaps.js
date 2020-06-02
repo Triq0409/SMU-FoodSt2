@@ -1,5 +1,5 @@
 import { NaverMap, Marker } from 'react-naver-maps';
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import '../css/App.css'
 
 /*
@@ -7,7 +7,18 @@ import '../css/App.css'
     funtion 2 = 리스트의 마커를 생성하는 함수
 */
 
+function btnClicked(){
+
+
+    return(
+        <div>test</div>
+    );
+}
+
 class MyMap extends Component {
+    state ={
+        listName: undefined
+    }
 
     newMarker() {
         const cafeList = [
@@ -70,6 +81,13 @@ class MyMap extends Component {
         );
         return (
             <div>
+                <div>
+                    <button className='listBtn' onClick={() => this.listName='cafeList'}>카페</button>
+                    <button className='listBtn' onClick={() => this.listName='foodList'}>식당</button>
+                    <button className='listBtn' onClick={() => this.listName='dessertList'}>디저트</button>
+                    <button className='listBtn' onClick={() => alert(this.listName)}>출력</button>
+                    <div>불러올 리스트의 이름은 {this.props.listName}입니다!</div>
+                </div>
                 <div className='map'>
                     <NaverMap
                         mapDivId={'maps'}

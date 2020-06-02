@@ -28,12 +28,26 @@ class ReviewComp extends Component{
           })
         })
     }
-    
+
+    handleRemove = (id) => {
+        const { reviews } = this.state;
+        this.setState({
+          reviews: reviews.filter(review => review.id !== id)
+        });
+      }
+
+    handleSubmit = () => {
+        this.setState({
+            input:''
+        })
+    }
     render(){
         const {input, reviews} = this.state
         const{
             handleChange,
-            handleCreate
+            handleCreate,
+            handleRemove,
+            handleSubmit
         }=this;
 
         return (
@@ -43,12 +57,14 @@ class ReviewComp extends Component{
                     value={input}
                     onChange={handleChange}
                     onCreate={handleCreate}
+                    onSubmit={handleSubmit}
                 />}
-            >
+            children={
                 <ReviewList
-                    reviews={reviews}
-                />
-
+                    reviews={reviews} 
+                   // onRemove={handleRemove}
+                />}
+            >    
             </ReviewTemplate>
         )
     }

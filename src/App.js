@@ -18,6 +18,8 @@ function App(){
         </div>
         <div className="content">
           <MapComp />
+        </div>
+        <div className="review">
           <ReviewComp/>
         </div>
       </div>

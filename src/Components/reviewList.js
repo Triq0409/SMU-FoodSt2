@@ -7,13 +7,14 @@ class ReviewList extends Component{
       } 
 
       render() {
-        const { reviews } = this.props;
+        const { reviews, onRemove } = this.props;
         
         const reviewList = reviews.map(
             ({id, text}) => (
               <ReviewItem 
                 id={id}
                 text={text}
+                onRemove={onRemove}
             />
             )
         )

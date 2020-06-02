@@ -53,8 +53,13 @@
     margin: 0 auto;
     padding-bottom: 200px;
   }
+.review{
+    width: 500px;
+    height: 150px;
+    background-color: whitesmoke;
+}
 
-.reviewListl {
+.form-wrapper {
     width: 500px;
     height: 150px;
     background-color: whitesmoke;
@@ -64,7 +69,7 @@
     margin: 0 auto;
 }
 
-.reviewInput {
+.review-wrapper {
     width: 500px;
     height: 150px;
     background-color: whitesmoke;

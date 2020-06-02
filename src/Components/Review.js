@@ -4,12 +4,16 @@ import '../css/Review.css';
 class ReviewItem extends Component {
 
     render() {
-        const {text} = this.props
+        const {text, id, onRemove} = this.props
 
         return (
-            <div className="review-text"> 
+            <div className="review-item"> 
                 <div className="review-text"> 
                     <div>{text}</div>
+                </div>
+                <div className="remove" onClick={(e)=>{
+                    e.stopPropagation();
+                    onRemove(id)}}>&times;
                 </div>
             </div>
         );

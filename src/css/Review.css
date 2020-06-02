@@ -8,15 +8,22 @@
 }
   
 .review-item:hover {
-    background: #e3fafc;
+    background:#ced4da;
 }
 
 .review-text {
     flex: 1; 
     word-break: break-all;}
 
-
-
 .review-item + .review-item {
-    border-top: 1px solid #f1f3f5;
+    border-top: 1px solid #0C90AD;
+    
+
+}
+
+.remove {
+    margin-right: 1rem;
+    color: black;
+    font-weight: 600;
+    opacity: 0;
 }
