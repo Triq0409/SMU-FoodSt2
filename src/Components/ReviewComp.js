@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Review from './Review';
 import ReviewForm from './ReviewForm';
-import ReviewList from './reviewList';
+import ReviewList from './ReviewList';
 import ReviewTemplate from './ReviewTemplate';
 
 import '../css/App.css';
@@ -40,13 +40,13 @@ class ReviewComp extends Component{
         });
       }
 
-    handleSubmit = (e) => {
+/*    handleSubmit = (e) => {
         e.preventDefault();
         this.props.onCreate(this.state)
         this.setState({
             textarea:''
         })
-    }
+    }*/
     render(){
         
         const {textarea,reviews} = this.state
@@ -63,9 +63,9 @@ class ReviewComp extends Component{
             <ReviewTemplate
             reviewform={
                 <ReviewForm
-                    value={textarea.replace("\r\n",'<br>')}
+                    value={textarea}
                     onChange={handleChange}
-                    //onCreate={handleCreate}
+                    onCreate={handleCreate}
                     //onSubmit={handleSubmit}
                 />}
             children={

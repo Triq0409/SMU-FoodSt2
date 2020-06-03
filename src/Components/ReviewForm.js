@@ -5,7 +5,7 @@ const ReviewForm = ({value, onSubmit, onCreate, onChange}) =>  {
     
     return(
         <div className = "form" >
-            <textarea value={value.replace('\r\n','<br>')} onChange={onChange} 
+            <textarea value={value} onChange={onChange} 
             />
             <div className="create-button" onClick={onSubmit}>
                 +
