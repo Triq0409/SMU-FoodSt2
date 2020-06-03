@@ -14,7 +14,7 @@ class ReviewList extends Component{
               <ReviewItem 
                 id={id}
                 text={text}
-                onRemove={onRemove}
+                key={id}
             />
             )
         )

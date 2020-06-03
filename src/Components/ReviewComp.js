@@ -3,7 +3,6 @@ import ReviewForm from './ReviewForm';
 import ReviewList from './ReviewList';
 import ReviewTemplate from './ReviewTemplate';
 import '../css/App.css';
-import '../css/Review.css';
 
 class ReviewComp extends Component{
     id = 2
@@ -13,6 +12,7 @@ class ReviewComp extends Component{
             {id:0, text:'리뷰리스트'},
             {id:1, text:'왜 안돼'}
         ]
+
     }
 
     handleChange = (e) =>{
@@ -31,15 +31,7 @@ class ReviewComp extends Component{
         })
     }
 
-    handleRemove = (id) => {
-        const { reviews } = this.state;
-        this.setState({
-          reviews: reviews.filter(review => review.id !== id)
-        });
-      }
-
     render(){
-        
         const {textarea,reviews} = this.state
         const{
             handleChange,
@@ -57,13 +49,15 @@ class ReviewComp extends Component{
                     onChange={handleChange}
                     onCreate={handleCreate}
                 />}
-            children={
+                >
                 <ReviewList
                     reviews={reviews} 
-                    onRemove={handleRemove}
-                />}
-            >    
+                  //  onRemove={handleRemove}
+                />
+               
             </ReviewTemplate>
+            {console.log("check")}
+            {console.log(reviews)}
         </div>
         );
     }

@@ -10,12 +10,14 @@
 }
 
 .review-wrapper {
+    height : 100px;
     color: #0C90AD;
     margin: 0 auto;
 }
 
 .revsiz {
     max-width: 585px;
+    height: 600px;
     margin: 0 auto;
     border: 6px inset #D8EEE7;
     padding: 20px;
