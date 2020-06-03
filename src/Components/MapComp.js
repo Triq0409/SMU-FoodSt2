@@ -1,26 +1,50 @@
 
 import React, { Component } from 'react';
+import { Marker } from 'react-naver-maps';
 import MyMap from './NaverMaps';
 import '../css/Map.css';
+import './ReviewComp';
+import ReviewComp from './ReviewComp';
 
+const navermaps = window.naver.maps;
 class MapComp extends Component {
-    state ={
-        listName : undefined
-    }
+    constructor(props) {
+        super(props);
+        this.state = {isToggleOn: true};
+
+        this.handleClick = this.handleClick.bind(this);
+      }
+
+    handleClick() {
+        this.setState(prevState => ({
+          isToggleOn: !prevState.isToggleOn,
+          showResults: !prevState.showResults
+        }));
+      }
+
     render() {
         return (
             <div>
-                <div>
+            <div className='mapContainer'>
+                <div className='BtnContainer'>
                     <button className='listBtn' onClick={() => this.listName='cafeList'}>카페</button>
                     <button className='listBtn' onClick={() => this.listName='foodList'}>식당</button>
                     <button className='listBtn' onClick={() => this.listName='dessertList'}>디저트</button>
-                    <button className='listBtn' onClick={() => alert(this.listName)}>출력</button>
-                    <div>불러올 리스트의 이름은 {this.listName}입니다!</div>
                 </div>
                 <MyMap />
+                <div>
+                <div className='infoWindow'>
+                    정보창 내용입니다.
+                </div>
+                <button className='infoBtn' onClick={this.handleClick}>{this.state.isToggleOn ? '리뷰 보기' : '리뷰 숨기기'}</button></div>
             </div>
+            {this.state.showResults ? <div><div className="marginBtm">✦✦✦</div><ReviewComp /></div> : null }
+          </div>
         );
     }
 }
 
 export default MapComp;
+
+
+// <button className='listBtn' onClick={() => alert(this.listName)}>출력</button>

@@ -14,6 +14,4 @@ const ReviewForm = ({value, onSubmit, onCreate, onChange}) =>  {
     )
 }
 
-
-
 export default ReviewForm;

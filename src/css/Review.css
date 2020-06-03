@@ -19,10 +19,20 @@
     flex: 1; 
     word-break: break-all;}
 
+.create-button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    background-color: #0C90AD;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 3px #999;
+}
 .review-item + .review-item {
     border-top: 1px solid #0C90AD;
-    
-
 }
 
 .remove {
@@ -30,4 +40,8 @@
     color: black;
     font-weight: 600;
     opacity: 0;
+}
+
+.revContainer{
+    max-width: 500px;
 }

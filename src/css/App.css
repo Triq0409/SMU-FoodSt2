@@ -47,28 +47,18 @@
 
 .content {
     background: linear-gradient(180deg, #D8EEE7 30%, #DAEFF5 65%, #91E0F4);
-    padding-top: 20px;
+    padding-top: 5px;
     margin-top: 5px;
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
   }
 
 .review{
     width: 500px;
     height: 150px;
-    background-color: whitesmoke;
 }
 
-.form-wrapper {
-    width: 500px;
-    height: 150px;
-    background-color: white;
-    color: #0C90AD;
-    font-size: 12px;
-    margin-bottom: 20px;
-    margin: 0 auto;
-}
 
 .review-wrapper {
     width: 500px;
@@ -80,16 +70,19 @@
 
 /* HTML index.html 에 적용할 css 코드들 */
 
-/*body::after{
-    background-image: url('http://www.sookmyung.ac.kr/sites/sookmyungkr/images/sub/contents/trade_character_05.png');
-    z-index: 1;
-    top:0;
-    left:0;
-    position:absolute;
-    background-size:100%;
-    opacity:0.5!important;
-    filter:alpha(opacity=50);
-    content:"";
-    width:100%;
-    height:100%;
-}*/
+
+.marginBtm{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #0C90AD;
+    text-align: center;
+}
+
+.textStyle{
+    color: grey;
+    font-weight: 100;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
