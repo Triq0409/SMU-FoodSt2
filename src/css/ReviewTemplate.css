@@ -1,8 +1,6 @@
 .review-template{
-    background : white;
-    width: 900px;
+    max-width: 585px;
     margin: 0 auto;
-    margin-top:1rem;
 }
 
 /*
@@ -10,7 +8,10 @@
     padding : 6rem;
     background : #ced4da;  
     width : 600px;
-    margin : 0 auto;   
+    margin : 0 auto;       background : white;
+    width: 900px;
+    margin: 0 auto;
+    margin-top:1rem;
 }
 
 .review-wrapper{
@@ -22,19 +23,20 @@
 }
 */
 .form-wrapper {
-    width: 600px;
-    padding : 3rem;
-    background-color: white;
     color: #0C90AD;
     font-size: 12px;
     margin: 0 auto;
 }
 
 .review-wrapper {
-    width: 500px;
-    height: 150px;
     background-color: whitesmoke;
     color: #0C90AD;
     margin: 0 auto;
 }
 
+.revsiz {
+    max-width: 585px;
+    margin: 0 auto;
+    border: 6px inset #D8EEE7;
+    padding: 20px;
+}

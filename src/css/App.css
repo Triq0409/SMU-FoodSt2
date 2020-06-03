@@ -56,12 +56,8 @@
 .review{
     width: 500px;
     height: 150px;
-    background-color: whitesmoke;
 }
-
-.reviewSize {
-}
-
+/*
 .form-wrapper2{
     width: 500px;
     height: 150px;
@@ -70,14 +66,7 @@
     font-size: 12px;
     margin-bottom: 20px;
     margin: 0 auto;
-}
-
-.revsiz {
-    max-width: 585px;
-    margin: 0 auto;
-    border: 6px inset #D8EEE7;
-    padding: 20px;
-}
+}*/
 
 /*revsiz::after{
     background-color: white;
@@ -125,4 +114,5 @@
     font-weight: 100;
     font-size: 40px;
     margin-bottom: 20px;
+    text-align: center;
 }

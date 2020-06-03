@@ -5,6 +5,7 @@ import ReviewList from './ReviewList';
 import ReviewTemplate from './ReviewTemplate';
 
 import '../css/App.css';
+import '../css/Review.css';
 
 class ReviewComp extends Component{
     id = 2
@@ -54,7 +55,7 @@ class ReviewComp extends Component{
         }=this;
 
         return (
-        <div>
+        <div className="revsiz">      
             <div className='textStyle'>송이들의 한마디</div>
             <ReviewTemplate
             reviewform={
