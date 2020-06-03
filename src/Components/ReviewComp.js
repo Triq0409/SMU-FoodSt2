@@ -1,16 +1,14 @@
 import React, {Component} from 'react';
-import Review from './Review';
 import ReviewForm from './ReviewForm';
 import ReviewList from './ReviewList';
 import ReviewTemplate from './ReviewTemplate';
-
 import '../css/App.css';
 import '../css/Review.css';
 
 class ReviewComp extends Component{
     id = 2
     state={
-        textarea:'',
+        input:'',
         reviews:[
             {id:0, text:'리뷰리스트'},
             {id:1, text:'왜 안돼'}
@@ -19,16 +17,16 @@ class ReviewComp extends Component{
 
     handleChange = (e) =>{
         this.setState({
-          textarea : e.target.value,
+          input : e.target.value,
         });
     }
 
     handleCreate = () => {
-        const {textarea, reviews} = this.state;
+        const {input, reviews} = this.state;
         this.setState({
           reviews: reviews.concat({
             id: this.id++,
-            text: textarea
+            text: input
           })
         })
     }
@@ -49,13 +47,12 @@ class ReviewComp extends Component{
     }*/
     render(){
         
-        const {textarea,reviews} = this.state
+        const {input,reviews} = this.state
        // var contents = textarea.replace("\r\n","<br>");
         const{
             handleChange,
             handleCreate,
-            handleRemove,
-            handleSubmit
+            handleRemove
         }=this;
 
         return (
@@ -64,10 +61,9 @@ class ReviewComp extends Component{
             <ReviewTemplate
             reviewform={
                 <ReviewForm
-                    value={textarea.replace("\r\n",'<br>')}
+                    value={input}
                     onChange={handleChange}
                     onCreate={handleCreate}
-                   // onSubmit={handleSubmit}
                 />}
             children={
                 <ReviewList

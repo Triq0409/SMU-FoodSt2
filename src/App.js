@@ -19,6 +19,7 @@ function App(){
         <div className="content">
         <MapComp />
         </div>
+
   </div>
 );
 
