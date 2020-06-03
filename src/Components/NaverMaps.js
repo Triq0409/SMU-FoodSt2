@@ -6,8 +6,32 @@ import '../css/App.css'
     funtion 1 = 버튼 클릭을 확인해 동일한 이름의 마커를 리턴해주는 함수
     funtion 2 = 리스트의 마커를 생성하는 함수
 */
+const navermaps = window.naver.maps;
 
 class MyMap extends Component {
+
+    newCafeMarker(){
+        const cafeList = [
+            ['커피니 숙대점', 37.545162, 126.966798],
+            ['카페코지 숙대점', 37.544918, 126.968947],
+            ['을의 커피', 37.545766, 126.966821]
+        ];
+    
+        const cafeloList = cafeList.map(
+            (cafeList) => (
+                <Marker
+                    position={new navermaps.LatLng(cafeList[1], cafeList[2])}
+                    onClick={() => {alert(`여기는 ${cafeList[0]}입니다.`);}}
+                />
+            )
+        );
+
+        return(
+            <div>
+                Cafe는 {cafeList}.
+            </div>
+        )
+    }
 
     newMarker() {
         const cafeList = [
@@ -42,7 +66,6 @@ class MyMap extends Component {
     }
     
     render(){
-        const navermaps = window.naver.maps;
         const locations =[
             ['숙명여대',37.5450416, 126.9647459],
             ['커피니 숙대점', 37.545162, 126.966798],
@@ -69,21 +92,19 @@ class MyMap extends Component {
             )
         );
         return (
-            <div>
-                <div className='map'>
-                    <NaverMap
-                        mapDivId={'maps'}
-                        style={{
-                        width: '100%',
-                        height: '100%' 
-                        }}
-                        defaultCenter={{  lat: 37.5450416, lng: 126.9647459 }}
-                        defaultZoom={15}
-                    >
-                        {loList}
+            <div className='map'>
+                <NaverMap
+                    mapDivId={'maps'}
+                    style={{
+                    width: '100%',
+                    height: '100%' 
+                    }}
+                    defaultCenter={{  lat: 37.5450416, lng: 126.9647459 }}
+                    defaultZoom={15}
+                >
+                    {loList}
                 </NaverMap>
-                </div>
-          </div>
+            </div>
         )
     }
 }

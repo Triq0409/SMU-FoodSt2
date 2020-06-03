@@ -16,16 +16,16 @@
     word-break: break-all;}
 
 .create-button {
-    padding: 15px 25px;
-    font-size:24px;
+    padding: 15px 20px;
+    font-size: 24px;
     text-align: center;
     cursor: pointer;
     outline: none;
     color: white;
-    background-color: royalblue;
+    background-color: #0C90AD;
     border: none;
     border-radius: 3px;
-    box-shadow: 0 9px #999;
+    box-shadow: 0 3px #999;
 }
 
 .review-item + .review-item {

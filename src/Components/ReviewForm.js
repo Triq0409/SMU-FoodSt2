@@ -12,5 +12,4 @@ const ReviewForm = ({text, onCreate, onChange}) =>  {
     )
 }
 
-
 export default ReviewForm;

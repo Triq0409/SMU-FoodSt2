@@ -10,7 +10,7 @@ function App(){
         <div className="header">
           <img className="icon" src="http://www.sookmyung.ac.kr/sites/sookmyungkr/images/sub/contents/trade_character_05.png" alt="logo"></img>
           <div className="title">
-          <a href="http://www.naver.com">
+          <a href="http://localhost:3000">
             <h4 className="fontSub">송&nbsp;이&nbsp;들&nbsp;의&nbsp; &nbsp;맛&nbsp;집&nbsp;가&nbsp;이&nbsp;드</h4><br /><br />
             <h1 className="font">숙플레이스</h1>
           </a>
@@ -18,8 +18,10 @@ function App(){
         </div>
         <div className="content">
           <MapComp />
-          Review 영역입니다!
-          <ReviewComp/>
+          <div className="marginBtm">✦✦✦</div>
+          <div className="revsiz">
+            <ReviewComp />
+          </div>
         </div>
       </div>
 

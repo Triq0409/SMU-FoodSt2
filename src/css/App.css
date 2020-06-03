@@ -47,22 +47,38 @@
 
 .content {
     background: linear-gradient(180deg, #D8EEE7 30%, #DAEFF5 65%, #91E0F4);
-    padding-top: 20px;
+    padding-top: 5px;
     margin-top: 5px;
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
   }
 
-.reviewListl {
+.reviewSize {
     width: 500px;
     height: 150px;
     background-color: whitesmoke;
-    color: #0C90AD;
+    color: royalblue;
     font-size: 12px;
     margin-bottom: 20px;
     margin: 0 auto;
 }
+
+.revsiz {
+    max-width: 585px;
+    margin: 0 auto;
+    border: 6px inset #D8EEE7;
+    padding: 20px;
+}
+
+/*revsiz::after{
+    background-color: white;
+    opacity: 0.4;
+    z-index: 1;
+    content:"";
+    width:100%;
+    height:100%;
+}*/
 
 .reviewInput {
     width: 500px;
@@ -87,3 +103,18 @@
     width:100%;
     height:100%;
 }*/
+
+.marginBtm{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #0C90AD;
+    text-align: center;
+}
+
+.textStyle{
+    color: grey;
+    font-weight: 100;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
