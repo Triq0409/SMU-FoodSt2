@@ -19,6 +19,8 @@
     flex: 1; 
     word-break: break-all;}
 
+
+
 .review-item + .review-item {
     border-top: 1px solid #0C90AD;
 }
@@ -28,8 +30,4 @@
     color: black;
     font-weight: 600;
     opacity: 0;
-}
-
-.revContainer{
-    max-width: 500px;
 }

@@ -5,7 +5,7 @@ const ReviewForm = ({value, onCreate, onChange}) =>  {
     
     return(
         <div className = "form" >
-            <input value={value} onChange={onChange} 
+            <textarea value={value} onChange={onChange} 
             />
             <div className="create-button" onClick={onCreate}>
                 +
