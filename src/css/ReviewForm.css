@@ -11,6 +11,7 @@
     border-radius: 4px;
     background-color: #f8f8f8;
     resize: none;
+    /*white-space: space pre;*/
 }
 .create-button{
     padding-top: 0.5rem;

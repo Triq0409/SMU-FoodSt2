@@ -3,25 +3,6 @@
     margin: 0 auto;
 }
 
-/*
-.form-wrapper{
-    padding : 6rem;
-    background : #ced4da;  
-    width : 600px;
-    margin : 0 auto;       background : white;
-    width: 900px;
-    margin: 0 auto;
-    margin-top:1rem;
-}
-
-.review-wrapper{
-    padding : 1rem;
-    min-height : 5rem;
-    width : 600px;
-    margin : 0 auto;
-    border-bottom : 1px solid black;
-}
-*/
 .form-wrapper {
     color: #0C90AD;
     font-size: 12px;
@@ -29,7 +10,6 @@
 }
 
 .review-wrapper {
-    background-color: whitesmoke;
     color: #0C90AD;
     margin: 0 auto;
 }
