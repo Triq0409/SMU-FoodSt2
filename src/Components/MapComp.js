@@ -38,7 +38,8 @@ class MapComp extends Component {
                 </div>
                 <button className='infoBtn' onClick={this.handleClick}>{this.state.isToggleOn ? '리뷰 보기' : '리뷰 숨기기'}</button></div>
             </div>
-            {this.state.showResults ? <div><div className="marginBtm">✦✦✦</div><ReviewComp /></div> : null }
+            <div className="marginBtm">✦✦✦</div>
+            {this.state.showResults ? <ReviewComp /> : null }
           </div>
         );
     }
