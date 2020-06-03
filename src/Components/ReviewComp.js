@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Review from './Review';
 import ReviewForm from './ReviewForm';
-import ReviewList from './ReviewList';
+import ReviewList from './reviewList';
 import ReviewTemplate from './ReviewTemplate';
 
 import '../css/App.css';
@@ -54,8 +54,7 @@ class ReviewComp extends Component{
         const{
             handleChange,
             handleCreate,
-            handleRemove,
-            handleSubmit
+            handleRemove
         }=this;
 
         return (
@@ -67,7 +66,7 @@ class ReviewComp extends Component{
                     value={textarea.replace("\r\n",'<br>')}
                     onChange={handleChange}
                     //onCreate={handleCreate}
-                    onSubmit={handleSubmit}
+                    //onSubmit={handleSubmit}
                 />}
             children={
                 <ReviewList

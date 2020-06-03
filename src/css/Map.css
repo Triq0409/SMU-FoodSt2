@@ -75,4 +75,5 @@
     border: none;
     border-left: 5px solid #0C90AD;
     font-size: 20px;
+    cursor: pointer;
 }
