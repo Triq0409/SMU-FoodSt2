@@ -16,11 +16,9 @@ function App(){
           </a>
           </div>
         </div>
-    <div className="content">
-      <MapComp />
-      <div className="marginBtm">✦✦✦</div>
-      <ReviewComp />
-    </div>
+        <div className="content">
+        <MapComp />
+        </div>
   </div>
 );
 
@@ -30,7 +28,11 @@ export default App;
 
 
 /*
-
+    <div className="content">
+      <MapComp />
+      <div className="marginBtm">✦✦✦</div>
+      <ReviewComp />
+    </div>
 <div className="template">
         <div className="header">
           <img className="icon" src="http://www.sookmyung.ac.kr/sites/sookmyungkr/images/sub/contents/trade_character_05.png" alt="logo"></img>
