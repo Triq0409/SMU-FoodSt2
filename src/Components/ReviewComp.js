@@ -40,13 +40,13 @@ class ReviewComp extends Component{
         });
       }
 
-    handleSubmit = (e) => {
+   /*handleSubmit = (e) => {
         e.preventDefault();
         this.props.onCreate(this.state)
         this.setState({
             textarea:''
         })
-    }
+    }*/
     render(){
         
         const {textarea,reviews} = this.state
@@ -66,8 +66,8 @@ class ReviewComp extends Component{
                 <ReviewForm
                     value={textarea.replace("\r\n",'<br>')}
                     onChange={handleChange}
-                    //onCreate={handleCreate}
-                    onSubmit={handleSubmit}
+                    onCreate={handleCreate}
+                   // onSubmit={handleSubmit}
                 />}
             children={
                 <ReviewList
