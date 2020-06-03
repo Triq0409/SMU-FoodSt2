@@ -11,9 +11,7 @@ class ReviewItem extends Component {
                 <div className="review-text"> 
                     <div>{text}</div>
                 </div>
-                <div className="remove" onClick={(e)=>{
-                    e.stopPropagation();
-                    onRemove(id)}}>&times;
+                <div className="remove" onRemove={onRemove(id)}>&times;
                 </div>
             </div>
         );

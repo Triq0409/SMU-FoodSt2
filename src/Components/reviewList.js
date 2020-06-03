@@ -13,7 +13,7 @@ class ReviewList extends Component{
             ({id, text}) => (
               <ReviewItem 
                 id={id}
-                text={text}
+                text={text.replace("\r\n",'<br>')}
                 onRemove={onRemove}
             />
             )

@@ -6,7 +6,7 @@ import ReviewTemplate from './ReviewTemplate';
 class ReviewComp extends Component{
     id = 2
     state={
-        input:'',
+        textarea:'',
         reviews:[
             {id:0, text:'리뷰리스트'},
             {id:1, text:'왜 안돼'}
@@ -15,16 +15,16 @@ class ReviewComp extends Component{
 
     handleChange = (e) =>{
         this.setState({
-          input : e.target.value,
+          textarea : e.target.value,
         });
     }
 
     handleCreate = () => {
-        const {input, reviews} = this.state;
+        const {textarea, reviews} = this.state;
         this.setState({
           reviews: reviews.concat({
             id: this.id++,
-            text: input
+            text: textarea
           })
         })
     }
@@ -36,13 +36,17 @@ class ReviewComp extends Component{
         });
       }
 
-    handleSubmit = () => {
+    handleSubmit = (e) => {
+        e.preventDefault();
+        this.props.onCreate(this.state)
         this.setState({
-            input:''
+            textarea:''
         })
     }
     render(){
-        const {input, reviews} = this.state
+        
+        const {textarea,reviews} = this.state
+       // var contents = textarea.replace("\r\n","<br>");
         const{
             handleChange,
             handleCreate,
@@ -54,15 +58,15 @@ class ReviewComp extends Component{
             <ReviewTemplate
             reviewform={
                 <ReviewForm
-                    value={input}
+                    value={textarea.replace("\r\n",'<br>')}
                     onChange={handleChange}
-                    onCreate={handleCreate}
+                    //onCreate={handleCreate}
                     onSubmit={handleSubmit}
                 />}
             children={
                 <ReviewList
                     reviews={reviews} 
-                   // onRemove={handleRemove}
+                    onRemove={handleRemove}
                 />}
             >    
             </ReviewTemplate>
