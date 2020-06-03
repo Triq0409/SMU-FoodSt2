@@ -11,7 +11,7 @@ const ReviewTemplate = ({reviewform,children}) => {
                 {children}
             </section>
         </main>
-    )
+    );
 }
 
 export default ReviewTemplate;

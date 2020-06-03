@@ -1,5 +1,5 @@
 import { NaverMap, Marker } from 'react-naver-maps';
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import '../css/App.css'
 
 /*
@@ -8,7 +8,18 @@ import '../css/App.css'
 */
 const navermaps = window.naver.maps;
 
+function btnClicked(){
+
+
+    return(
+        <div>test</div>
+    );
+}
+
 class MyMap extends Component {
+    state ={
+        listName: undefined
+    }
 
     newCafeMarker(){
         const cafeList = [
@@ -92,20 +103,28 @@ class MyMap extends Component {
             )
         );
         return (
-            <div className='map'>
-                <NaverMap
-                    mapDivId={'maps'}
-                    style={{
-                    width: '100%',
-                    height: '100%' 
-                    }}
-                    defaultCenter={{  lat: 37.5450416, lng: 126.9647459 }}
-                    defaultZoom={15}
-                >
-                    {loList}
+            <div>
+                <div>
+                    <button className='listBtn' onClick={() => this.listName='cafeList'}>카페</button>
+                    <button className='listBtn' onClick={() => this.listName='foodList'}>식당</button>
+                    <button className='listBtn' onClick={() => this.listName='dessertList'}>디저트</button>
+                    <button className='listBtn' onClick={() => alert(this.listName)}>출력</button>
+                    <div>불러올 리스트의 이름은 {this.props.listName}입니다!</div>
+                </div>
+                <div className='map'>
+                    <NaverMap
+                        mapDivId={'maps'}
+                        style={{
+                        width: '100%',
+                        height: '100%' 
+                        }}
+                        defaultCenter={{  lat: 37.5450416, lng: 126.9647459 }}
+                        defaultZoom={15}
+                    >
+                        {loList}
                 </NaverMap>
-            </div>
-        )
+            </div></div>
+        );
     }
 }
 

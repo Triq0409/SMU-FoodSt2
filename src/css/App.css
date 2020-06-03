@@ -53,8 +53,16 @@
     margin: 0 auto;
     padding-bottom: 100px;
   }
+.review{
+    width: 500px;
+    height: 150px;
+    background-color: whitesmoke;
+}
 
 .reviewSize {
+}
+
+.form-wrapper2{
     width: 500px;
     height: 150px;
     background-color: whitesmoke;
@@ -80,7 +88,7 @@
     height:100%;
 }*/
 
-.reviewInput {
+.review-wrapper {
     width: 500px;
     height: 150px;
     background-color: whitesmoke;

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReviewComp from './Components/ReviewComp';
-import MapComp from './Components/MapComp'
+import MapComp from './Components/MapComp';
 import './css/App.css';
 
 function App(){
@@ -19,9 +19,10 @@ function App(){
         <div className="content">
           <MapComp />
           <div className="marginBtm">✦✦✦</div>
-          <div className="revsiz">
-            <ReviewComp />
-          </div>
+
+        </div>
+        <div className="review">
+          <ReviewComp/>
         </div>
       </div>
 
@@ -32,3 +33,6 @@ function App(){
 export default App;
 
 
+/*          <div className="revsiz">
+            <ReviewComp />
+          </div>*/

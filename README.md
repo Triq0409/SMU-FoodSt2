@@ -14,6 +14,7 @@ React 기반으로 지도 api 활용하여 학교 주변 맛집 지도 만들기
     - (홈/현재위치 홈으로/학교)
     - ~~마커 버튼 만들기~~
 - 리뷰
+  - ~~띄우기~~
   - 한줄평
     - 등록 & 삭제 기능
 - 기본 css
@@ -36,3 +37,5 @@ React 기반으로 지도 api 활용하여 학교 주변 맛집 지도 만들기
 ## 기타 자료들 ##
 - [W3 School - Css, HTML 기초](https://www.w3schools.com/)
 - [깃헙 마크다운 사용법](https://gist.github.com/ihoneymon/652be052a0727ad59601)
+- [React Real World(블로그 만들기 튜토리얼)](https://github.com/gothinkster/react-redux-realworld-example-app)
+- [React 공식 가이드](https://ko.reactjs.org/docs/getting-started.html)
